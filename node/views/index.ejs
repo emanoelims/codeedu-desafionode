@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Full Cycle Rocks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Full Cycle Rocks!</h1>
+
+    <form>
+      <input placeholder="Nome do tripulante" />
+      <button>adicionar</button>
+    </form>
+  </header>
+
+  <main>
+    <ul>
+      <% peoples.forEach((people) => { %>
+        <li><%= people.name %></li>
+      <%})%>
+    </ul>
+  </main>
+  <script src="/script/main.js"></script>
+</body>
+</html>

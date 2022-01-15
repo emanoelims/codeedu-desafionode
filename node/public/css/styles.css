@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+input,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input {
+  outline: 0;
+  color: #909090;
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #909090;
+  background-color: #303030;
+}
+
+button {
+  cursor: pointer;
+  text-transform: capitalize;
+  border: 0;
+  padding: 0.625rem 1rem;
+  border-radius: 0.3125rem;
+  background-color: #fcca50;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  color: #fcca50;
+  background-color: #1c1c1c;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #303030;
+}
+
+header form {
+  display: flex;
+  max-width: 25rem;
+  margin-inline: auto;
+  margin-block-start: 1rem;
+}
+
+header input {
+  flex: 1;
+  text-align: center;
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+}
+
+header button {
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+}
+
+main {
+  margin-inline: auto;
+  margin-block-start: 1rem;
+  max-inline-size: 25rem;
+}
+
+main ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main li {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.3125rem;
+  background-color: #303030;
+}
