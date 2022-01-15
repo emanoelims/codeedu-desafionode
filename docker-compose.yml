@@ -24,6 +24,7 @@ services:
       - db
     volumes: 
       - ./node/:/app/
+      - /app/node_modules/
     networks:
       - nodenet
 
